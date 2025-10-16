@@ -1,40 +1,27 @@
-# Lesson 10 – Allure + Документация
+# Домашнее задание №10 – Документация и Allure
 
-## 🚀 Как запустить тесты с Allure
+## Как запустить тесты
+1. Установить зависимости:
+pip install -r requirements.txt
 
-1. Установите зависимости:
-   ```bash
-   pip install -r requirements.txt
-Запустите тесты с генерацией отчёта:
-
-bash
+markdown
 Копировать код
+2. Запустить тесты с формированием отчёта:
 pytest --alluredir=allure_results
-Просмотрите отчёт:
 
-bash
+markdown
 Копировать код
+3. Посмотреть отчёт:
 allure serve allure_results
-⚠️ Папки allure_results и allure_report пушить в репозиторий не нужно.
 
-yaml
+markdown
 Копировать код
 
----
+## Структура проекта
+- `pages/` — классы страниц (Page Object)
+- `tests/` — тесты
+- `conftest.py` — фикстуры
+- `readme.md` — инструкция по запуску
 
-👉 Теперь твои шаги:
-1. Создаёшь ветку `lesson10`.  
-2. Копируешь туда эти файлы.  
-3. `git add . && git commit -m "Lesson 10 with Allure and docs"`  
-4. `git push origin lesson10`  
-5. Создаёшь Pull Request.  
-
----
-
-Хочешь, я сразу сделаю тебе **версию с разметкой PEP8 (flake8-чистую)**, чтобы не пришлось потом исправлять ошибки стиля?
-
-
-
-
-
-
+Allure-разметка добавлена для шагов и проверок.  
+Проект проверен линтером flake8 и соответствует PEP8.
